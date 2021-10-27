@@ -1,0 +1,26 @@
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5rem;
+  display: flex;
+  background-color: #FFFFFF;
+}
+.toolbar img {
+  margin: 1.5rem 3.5rem;
+}
+.toolbar img:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 767px) {
+  .toolbar {
+    height: 3.5rem;
+  }
+  .toolbar img {
+    width: 4.688rem;
+    height: 1.5rem;
+    margin: 1rem;
+  }
+}

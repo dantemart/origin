@@ -1,0 +1,5 @@
+<span class="input-money__label">Total amount</span>
+<div class="input-money__field">
+  <img class="input-money__icon" src="assets/money.png" alt="money">
+  <input name="amount" class="input-money__input" currencyMask [(ngModel)]="value" (ngModelChange)="onChange($event)" [options]="{ prefix: '', thousands: ',', decimal: '.' }"/>
+</div>

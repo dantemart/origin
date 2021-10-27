@@ -1,0 +1,11 @@
+<span class="input-date__label">Reach goal by</span>
+<div name="reachDate" class="input-date__field" (keydown)="onKeydownEvent($event)">
+  <button class="input-date__left-btn" (click)="updateDate('ArrowLeft')" [disabled]="isEqualToMinDate()"><img class="input-date__icon"
+      src="assets/chevron-left.png" alt="left"></button>
+  <div class="input-date__input">
+    <span><strong>{{ month }}</strong></span>
+    <span>{{ year }}</span>
+  </div>
+  <button class="input-date__right-btn" (click)="updateDate('ArrowRight')"><img class="input-date__icon" src="assets/chevron-right.png"
+      alt="right"></button>
+</div>

@@ -1,0 +1,12 @@
+<div class="highlight">
+  <div class="highlight__header">
+    <h3>Monthly amount</h3>
+    <h2>{{ moneyValue / getNumberOfMonths() | currency }}</h2>
+  </div>
+  <div class="highlight__description">
+    <p>
+      You’re planning <strong>{{ getNumberOfMonths() }} monthly deposits</strong> to reach your <strong>{{ moneyValue | currency }}</strong> goal by <strong>{{ dateValue.toLocaleString('en', { month: 'long' }) }} {{ dateValue.getFullYear() }}.</strong>
+    </p>
+  </div>
+</div>
+

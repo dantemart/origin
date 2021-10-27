@@ -1,0 +1,13 @@
+<app-toolbar></app-toolbar>
+<div class="content" role="main">
+  <p class="">Let's plan your <strong>saving goal</strong>.</p>
+  <app-card>
+    <app-header></app-header>
+    <div class="form">
+      <app-input-money [(value)]="moneyValue"></app-input-money>
+      <app-input-date [value]="dateValue"></app-input-date>
+    </div>
+    <app-card-highlight [moneyValue]="moneyValue" [dateValue]="dateValue"></app-card-highlight>
+    <app-button ctaText="Confirm"></app-button>
+  </app-card>
+</div>

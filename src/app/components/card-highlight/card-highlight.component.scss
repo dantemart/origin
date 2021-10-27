@@ -1,0 +1,53 @@
+.highlight {
+  margin: 0 0 2rem 0;
+  border: 1px solid #E9EEF2;
+  box-sizing: border-box;
+  border-radius: 0.5rem;
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+  }
+  &__header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: normal;
+    line-height: 120%;
+    color: #1E2A32;
+  }
+  &__header h2 {
+    margin: 0;
+    font-family: Rubik;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 120%;
+    color: #0079FF;
+  }
+  &__description {
+    background-color: #F4F8FA;
+    padding: 1.5rem 2rem;
+  }
+  &__description p {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: #1C1E1F;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  :host {
+    width: 100%;
+  }
+  .highlight {
+    &__header h3 {
+      font-size: 1.125rem;
+    }
+    &__header h2 {
+      font-size: 1.5rem;
+    }
+    &__description {
+      text-align: center;
+    }
+  }
+}

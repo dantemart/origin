@@ -1,0 +1,46 @@
+:host {
+  width: 17rem;
+  display: flex;
+  flex-direction: column;
+}
+.input-money__label {
+  font-size: 0.875rem;
+  line-height: 150%;
+  color: #1E2A32;
+  margin: 0 0 0.25rem 0;
+}
+.input-money__field {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0.75rem;
+  border: 1px solid #E9EEF2;
+  box-sizing: border-box;
+  border-radius: 0.25rem;
+}
+.input-money__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin: 0 0.5rem 0 0;
+}
+.input-money__input {
+  width: 100%;
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 1.5rem;
+  line-height: 120%;
+  color: #4D6475;
+  text-align: left !important;
+  border: none;
+}
+@media screen and (max-width: 767px) {
+  :host {
+    width: 100%;
+  }
+  .input-money__label {
+    font-size: 0.75rem;
+  }
+  .input-money__input {
+    font-size: 1.25rem;
+  }
+}
